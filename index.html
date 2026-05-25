@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AI Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="bot-info">
+        <div class="avatar">✨</div>
+        <div>
+          <h2>Gemini Assistant</h2>
+          <p class="status">🟢 Powered by Google AI</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="chat-screen" class="chat-screen">
+      <div class="message bot-msg">
+        Hi! I'm an advanced AI assistant linked directly to Gemini. Ask me anything, tell me to write code, or just chat! How can I help you today?
+      </div>
+    </main>
+
+    <footer class="chat-footer">
+      <input type="text" id="user-input" placeholder="Ask me anything..." onkeypress="checkEnter(event)">
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
